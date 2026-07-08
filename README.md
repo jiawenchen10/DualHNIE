@@ -1,9 +1,9 @@
-## DualHNIE:Dual-Channel Hypergraph Learning for Node Importance Estimation in Knowledge Graph
+## DualHNIE: Dual-Channel Hypergraph Learning for Node Importance Estimation in Heterogeneous Knowledge Graphs
 
 Welcome to DualHNIE's GitHub repository! This repository hosts the code, data and model weight of **DualHNIE**.
 
-**Abstract**: Node importance estimation (NIE) in heterogeneous knowledge graphs is a critical yet challenging task, essential for applications such as recommendation, knowledge reasoning, and question answering. Existing methods often rely on pairwise connections, neglecting high-order dependencies among multiple entities and relations, and they treat structural and semantic signals independently, hindering effective cross-modal integration.
-To address these challenges, we propose DualHNIE, a meta-path induced hypergraph contrastive learning framework for disentangling and aligning structural and semantic information. DualHNIE constructs a higher-order knowledge graph via meta-path sequences, where typed hyperedges capture multi-entity relational contexts. Structural dependencies are aggregated with local attention, while semantic representations are encoded through a hypergraph transformer equipped with sparse chunking to reduce redundancy. Finally, a multimodal fusion module integrates structural and semantic embeddings under contrastive learning with auxiliary supervision, ensuring robust cross-modal alignment. Extensive experiments on benchmark NIE datasets demonstrate that DualHNIE consistently outperforms state-of-the-art baselines, highlighting the benefits of explicitly modeling high-order interactions and aligning multimodal representations in heterogeneous knowledge graphs.
+**Abstract**: Estimating node importance in heterogeneous knowledge graphs is a fundamental problem underlying recommendation, search, and knowledge decision systems. However, most existing methods rely on pairwise message passing mechanisms that fail to capture higher-order interactions induced by meta-relational structures. Furthermore, structural topology and semantic attributes are typically entangled within a unified embedding space, which obscures their distinct inductive biases and limits the discriminative capacity of learned importance representations.
+To address these limitations, we propose DualHNIE, a principled dual-channel hypergraph learning framework for node importance estimation. DualHNIE first constructs a higher-order knowledge graph by forming typed hyperedges from meta-path sequences, enabling explicit modeling of higher-order relational patterns. It then introduces two complementary encoders: a structure-aware hypergraph attention network that performs locally normalized aggregation over meta-path--induced hyperedges to capture localized structural dependencies, and a sparse--chunked hypergraph transformer that captures global semantic interactions while maintaining scalable computation. We further design a contrastive alignment mechanism with auxiliary supervision, ensuring cross-view consistency while preserving modality-specific representation. Extensive experiments on multiple benchmark datasets demonstrate that DualHNIE outperforms state-of-the-art methods, validating the effectiveness of explicit high-order modeling and disentangled dual-channel representation learning for heterogeneous knowledge graphs.
 
 <p align="center">
 <img src="img/figure.png" height = "480" alt="" align=center />
@@ -15,14 +15,11 @@ Paper : https://arxiv.org/abs/2512.12477
 If you find this repository helpful for your research, please cite our paper. 
 
 ```tex
-@article{chen2025metahgnie,
-      title={MetaHGNIE: Meta-Path Induced Hypergraph Contrastive Learning in Heterogeneous Knowledge Graphs}, 
-      author={Jiawen Chen and Yanyan He and Qi Shao and Mengli Wei and Duxin Chen and Wenwu Yu and Yanlong Zhao},
-      year={2025},
-      eprint={2512.12477},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2512.12477}, 
+@article{chen2026dualhnie,
+  title   = {DualHNIE: Dual-Channel Hypergraph Learning for Node Importance Estimation in Heterogeneous Knowledge Graphs},
+  author  = {Chen, Jiawen and He, Yanyan and Shao, Qi and Wei, Mengli and Chen, Duxin and Yu, Wenwu and Zhao, Yanlong},
+  journal = {IEEE Transactions on Artificial Intelligence},
+  year    = {2026}
 }
 
 ```
