@@ -12,17 +12,6 @@ To address these limitations, we propose DualHNIE, a principled dual-channel hyp
 Paper : https://arxiv.org/abs/2512.12477
 
 
-If you find this repository helpful for your research, please cite our paper. 
-
-```tex
-@article{chen2026dualhnie,
-  title   = {DualHNIE: Dual-Channel Hypergraph Learning for Node Importance Estimation in Heterogeneous Knowledge Graphs},
-  author  = {Chen, Jiawen and He, Yanyan and Shao, Qi and Wei, Mengli and Chen, Duxin and Yu, Wenwu and Zhao, Yanlong},
-  journal = {IEEE Transactions on Artificial Intelligence},
-  year    = {2026}
-}
-
-```
 
 
 
@@ -140,5 +129,22 @@ Run scripts under the folder `./scripts`.
 
 ```shell
 sh ./scripts/run_fusion.sh
+```
+
+
+If you find this repository helpful for your research, please cite our paper. 
+
+```tex
+@ARTICLE{chen11605113,
+  author={Chen, Jiawen and He, Yanyan and Shao, Qi and Wei, Mengli and Chen, Duxin and Yu, Wenwu and Zhao, Yanlong},
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={DualHNIE: Dual-Channel Hypergraph Learning for Node Importance Estimation in Heterogeneous Knowledge Graphs}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-12},
+  keywords={Knowledge graphs;Modeling;Estimation;Head;Educational institutions;Permission;Weighted sum model;Conferences;Artificial intelligence;Learning (artificial intelligence);Heterogeneous Knowledge Graph;Node Importance Estimation;Graph Neural Networks;Complex Network},
+  doi={10.1109/TAI.2026.3712336}}
+
 ```
 
